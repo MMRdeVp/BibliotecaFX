@@ -17,16 +17,16 @@
 
         <!-- Mostrar SQL en la consola -->
         <property name="hibernate.show_sql">false</property>
-        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.format_sql">false</property>
 
         <!-- Transacciones -->
         <property name="hibernate.transaction.coordinator_class">jdbc</property>
 
         <!-- Mapeo de entidades -->
-        <mapping class="org.example.entities.Libro"/>
-        <mapping class="org.example.entities.Socio"/>
-        <mapping class="org.example.entities.Autor"/>
-        <mapping class="org.example.entities.Prestamo"/>
+        <mapping class="org.example.bibliotecafx.entities.Libro"/>
+        <mapping class="org.example.bibliotecafx.entities.Socio"/>
+        <mapping class="org.example.bibliotecafx.entities.Autor"/>
+        <mapping class="org.example.bibliotecafx.entities.Prestamos"/>
 
     </session-factory>
 </hibernate-configuration>

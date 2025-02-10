@@ -31,7 +31,7 @@
                   <TableColumn editable="false" prefWidth="350.0" resizable="false" text="C2" />
               </columns>
             </TableView>
-            <ToggleButton id="TBLibros" layoutX="24.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Libros">
+            <ToggleButton id="TBLibros" layoutX="24.0" layoutY="144.0" mnemonicParsing="false" onAction="#RefrescarTabla" prefHeight="25.0" prefWidth="150.0" text="Libros" toggleGroup="$ObjetoSeleccionado">
                <font>
                   <Font size="19.0" />
                </font>
@@ -39,17 +39,17 @@
                   <ToggleGroup fx:id="ObjetoSeleccionado" />
                </toggleGroup>
             </ToggleButton>
-            <ToggleButton id="TBPrestamos" layoutX="474.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Prestamos" toggleGroup="$ObjetoSeleccionado">
+            <ToggleButton id="TBPrestamos" layoutX="474.0" layoutY="144.0" mnemonicParsing="false" onAction="#RefrescarTabla" prefHeight="25.0" prefWidth="150.0" text="Prestamos" toggleGroup="$ObjetoSeleccionado">
                <font>
                   <Font size="19.0" />
                </font>
             </ToggleButton>
-            <ToggleButton id="TBAutores" layoutX="324.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Autores" toggleGroup="$ObjetoSeleccionado">
+            <ToggleButton id="TBAutores" layoutX="324.0" layoutY="144.0" mnemonicParsing="false" onDragDetected="#RefrescarTabla" prefHeight="25.0" prefWidth="150.0" text="Autores" toggleGroup="$ObjetoSeleccionado">
                <font>
                   <Font size="19.0" />
                </font>
             </ToggleButton>
-            <ToggleButton id="TBSocios" layoutX="174.0" layoutY="144.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Socios" toggleGroup="$ObjetoSeleccionado">
+            <ToggleButton id="TBSocios" layoutX="174.0" layoutY="144.0" mnemonicParsing="false" onAction="#RefrescarTabla" prefHeight="25.0" prefWidth="150.0" text="Socios" toggleGroup="$ObjetoSeleccionado">
                <font>
                   <Font size="19.0" />
                </font>
